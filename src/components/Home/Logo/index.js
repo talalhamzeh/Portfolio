@@ -4,7 +4,6 @@ import Pp from '../../../assets/images/PP.png'
 
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 
 const Logo = () => {
     const bgRef = useRef()
@@ -12,7 +11,7 @@ const Logo = () => {
     const solidLogoRef = useRef()
   
     useEffect(() => {
-      gsap.registerPlugin(DrawSVGPlugin)
+      
   
       gsap
         .timeline()
@@ -21,7 +20,7 @@ const Logo = () => {
           opacity: 1,
         })
         .from(outlineLogoRef.current, {
-          drawSVG: 0,
+          
           duration: 20,
         })
   
@@ -51,7 +50,7 @@ const Logo = () => {
             height="897pt"
             version="1.0"
             viewBox="0 0 559 897"
-            xmlns="http://www.w3.org/2000/svg"
+            
           >
             <g
               className="svg-container"
