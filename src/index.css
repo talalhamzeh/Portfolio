@@ -13,7 +13,7 @@ body {
   display: block;
 }
 
-/* .dashboard {
+.dashboard {
   margin-top: 200px;
   margin-left: 200px;
 }
@@ -22,4 +22,4 @@ body {
   body {
     overflow: visible;
   }
-} */
+}
