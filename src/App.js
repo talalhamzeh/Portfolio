@@ -7,7 +7,7 @@ import About from './components/About/about';
 import Contact from './components/Contact/contact'
 import Portfolio from './components/Portfolio/portfolio';
 import Dashboard from './components/Dashboard'
-
+import Books from './components/Books/books'
 function App() {
   return (
     <>
@@ -18,6 +18,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/books" element={<Books />} />
+
          
         </Route>
       </Routes>

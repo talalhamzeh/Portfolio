@@ -1,11 +1,12 @@
 import './sidebar.scss'
 import { useState } from 'react'
 import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
+  faBots,
+
 
 } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -61,6 +62,17 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
+        
+        <NavLink
+          activeclassname="active"
+          className="books-link"
+          to="/books"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faBots} color="#4d4d4e"/>
+        </NavLink>
+
+
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}

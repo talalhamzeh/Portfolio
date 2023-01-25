@@ -89,6 +89,11 @@
         content: 'CONTACT';
       }
     }
+    a.books-link {
+      &:after {
+        content: 'BOOKS';
+      }
+    }
 
     a.portfolio-link {
       &:after {
